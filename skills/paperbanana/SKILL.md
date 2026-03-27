@@ -1,7 +1,7 @@
 ---
 name: paperbanana
 description: Generate publication-quality academic diagrams and statistical plots from methodology text and caption. Multi-phase pipeline with reference retrieval, structured planning, venue-specific styling, and iterative critic refinement. Use this skill whenever the user wants to create academic figures, conference diagrams, methodology illustrations, architecture diagrams, or statistical plots for papers.
-argument-hint: [methodology text or file path] [caption]
+argument-hint: "[methodology text or file path] [caption]"
 allowed-tools: Read, Write, Bash, Glob, Grep, AskUserQuestion
 ---
 
