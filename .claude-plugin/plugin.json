@@ -8,9 +8,5 @@
   },
   "homepage": "https://github.com/eunsanMountain/paperbanana-cc",
   "keywords": ["academic", "diagram", "plot", "illustration", "research", "paper", "neurips", "icml"],
-  "license": "Apache-2.0",
-  "dependencies": {
-    "python": ">=3.12",
-    "uvx": "paperbanana-cc"
-  }
+  "license": "Apache-2.0"
 }
