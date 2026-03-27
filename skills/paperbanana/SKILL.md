@@ -30,15 +30,15 @@ This skill uses two directory roots:
 - **`{PLUGIN_DIR}`** — where PaperBanana CC is installed (contains `prompts/`, `style_guides/`, `data/`). All pipeline resource files are read from here.
 - **`{CWD}`** — the user's current working directory. Output artifacts are saved here.
 
-To find `{PLUGIN_DIR}`, locate the directory containing this SKILL.md file, then go up 3 levels:
+To find `{PLUGIN_DIR}`, run this search (checks multiple install locations):
 
 ```bash
-# This SKILL.md is at {PLUGIN_DIR}/.claude/skills/paperbanana/SKILL.md
-# Find the plugin root by searching for the project marker
-PLUGIN_DIR=$(dirname "$(dirname "$(dirname "$(find ~/.claude/plugins -path '*/paperbanana-cc/prompts/context_enricher.md' 2>/dev/null | head -1)")")")
+PLUGIN_DIR=$(find ~/.claude/plugins -path '*/paperbanana*/prompts/context_enricher.md' 2>/dev/null | head -1 | xargs dirname | xargs dirname)
+[ -z "$PLUGIN_DIR" ] && [ -f "./prompts/context_enricher.md" ] && PLUGIN_DIR="."
+echo "PLUGIN_DIR=$PLUGIN_DIR"
 ```
 
-If running locally (inside the paperbanana-cc directory itself), `{PLUGIN_DIR}` equals `{CWD}`.
+If `{PLUGIN_DIR}` is empty, the plugin may not be installed correctly — ask the user to verify.
 
 **Shorthand used below:**
 - `{P}/prompts/...` means `{PLUGIN_DIR}/prompts/...`
