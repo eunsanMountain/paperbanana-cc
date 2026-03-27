@@ -1,0 +1,15 @@
+{
+  "name": "paperbanana-marketplace",
+  "owner": {
+    "name": "eunsan-jo",
+    "url": "https://github.com/eunsan-jo"
+  },
+  "plugins": [
+    {
+      "name": "paperbanana-cc",
+      "source": ".",
+      "description": "Publication-quality academic diagrams and statistical plots with reference retrieval, venue-specific styling, and iterative critic refinement",
+      "tags": ["academic", "diagram", "plot", "illustration", "research", "paper"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Ruff
+.ruff_cache
+
+# Distribution / packaging
+work_dirs/**
+work_dir/**
+configs/debug/**
+
+# pytest
+.pytest_cache
+tests/fixtures/**
+!**/.gitkeep
+
+# Environment
+.env
+.env.local
+
+# Output artifacts
+output/
+!output/.gitkeep
+
+# Large datasets (download separately)
+data/PaperBananaBench/
+data/references/

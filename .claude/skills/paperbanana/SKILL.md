@@ -1,0 +1,1 @@
+../../../skills/paperbanana/SKILL.md

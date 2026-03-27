@@ -1,0 +1,16 @@
+{
+  "name": "paperbanana-cc",
+  "version": "0.1.0",
+  "description": "Publication-quality academic diagrams and statistical plots — reference retrieval, venue-specific styling (NeurIPS/ICML/ACL/IEEE), and iterative critic refinement",
+  "author": {
+    "name": "eunsan.jo",
+    "url": "https://github.com/eunsan-jo"
+  },
+  "homepage": "https://github.com/eunsan-jo/paperbanana-cc",
+  "keywords": ["academic", "diagram", "plot", "illustration", "research", "paper", "neurips", "icml"],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "python": ">=3.12",
+    "uvx": "paperbanana-cc"
+  }
+}
