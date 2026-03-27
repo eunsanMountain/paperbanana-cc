@@ -1,5 +1,7 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "paperbanana-marketplace",
+  "description": "PaperBanana CC — publication-quality academic diagrams and plots",
   "owner": {
     "name": "eunsanMountain",
     "url": "https://github.com/eunsanMountain"
@@ -7,9 +9,13 @@
   "plugins": [
     {
       "name": "paperbanana-cc",
-      "source": { "type": "github", "repo": "eunsanMountain/paperbanana-cc" },
       "description": "Publication-quality academic diagrams and statistical plots with reference retrieval, venue-specific styling, and iterative critic refinement",
-      "tags": ["academic", "diagram", "plot", "illustration", "research", "paper"]
+      "source": {
+        "source": "url",
+        "url": "https://github.com/eunsanMountain/paperbanana-cc.git"
+      },
+      "category": "development",
+      "homepage": "https://github.com/eunsanMountain/paperbanana-cc"
     }
   ]
 }
