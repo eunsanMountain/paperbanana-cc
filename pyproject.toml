@@ -1,6 +1,6 @@
 [project]
 name = "paperbanana-cc"
-version = "0.1.0"
+version = "0.1.1"
 description = "Claude Code Skill for publication-quality academic diagrams and plots — built on the PaperBanana framework (arXiv:2601.23265)"
 readme = "README.md"
 license = "Apache-2.0"

@@ -1,6 +1,6 @@
 {
   "name": "paperbanana-cc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Publication-quality academic diagrams and statistical plots — reference retrieval, venue-specific styling (NeurIPS/ICML/ACL/IEEE), and iterative critic refinement",
   "author": {
     "name": "eunsan.jo",
