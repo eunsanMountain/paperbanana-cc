@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "paperbanana-cc",
-      "source": ".",
+      "source": { "type": "github", "repo": "eunsanMountain/paperbanana-cc" },
       "description": "Publication-quality academic diagrams and statistical plots with reference retrieval, venue-specific styling, and iterative critic refinement",
       "tags": ["academic", "diagram", "plot", "illustration", "research", "paper"]
     }
