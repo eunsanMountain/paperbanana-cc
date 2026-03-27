@@ -34,7 +34,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/eunsan-jo/paperbanana-cc"
+Homepage = "https://github.com/eunsanMountain/paperbanana-cc"
 Paper = "https://arxiv.org/abs/2601.23265"
 "Original (Research)" = "https://github.com/dwzhu-pku/PaperBanana"
 "Original (Production)" = "https://github.com/llmsresearch/paperbanana"

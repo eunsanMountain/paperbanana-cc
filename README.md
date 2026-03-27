@@ -62,33 +62,37 @@ All phases except image generation are performed directly by Claude Code. Prompt
 ### Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) subscription (Claude Pro / Max / Team)
-- Python 3.12+
-- [uv](https://docs.astral.sh/uv/) package manager
+- [uv](https://docs.astral.sh/uv/) (for `uvx` — Python dependencies are installed automatically)
 - **Optional**: OpenAI API key and/or Google API key (not required for manual generation)
 
-### Setup
+### Install via Plugin Marketplace
 
 ```bash
-# 1. Install uv (if not installed)
+# 0. Install uv (if not installed) — required for image generation
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 2. Clone & install dependencies
-git clone https://github.com/eunsan-jo/paperbanana-cc.git
-cd paperbanana-cc && uv sync
+# 1. Add marketplace (one-time)
+/plugin marketplace add eunsanMountain/paperbanana-cc
+
+# 2. Install plugin
+/plugin install paperbanana-cc@paperbanana-marketplace
 
 # 3. (Optional) Set API keys — not required for manual generation mode
 echo "OPENAI_API_KEY=sk-..." >> .env
 echo "GOOGLE_API_KEY=AI..." >> .env
-
-# 4. Open your project and launch Claude Code with the plugin
-cd /path/to/your-project
-claude --plugin-dir /path/to/paperbanana-cc
 ```
 
-Once loaded, the skill is available as `/paperbanana-cc:paperbanana`.
+That's it. No `git clone`, no `uv sync` — the plugin loads skills directly, and Python dependencies are fetched on-demand via `uvx`.
+
 Reference data (~300MB) is downloaded automatically on first run.
 
-> **Note**: This plugin includes Python dependencies for image generation and plot execution, so `git clone` + `uv sync` is required. `claude --plugin-dir` loads the skill definitions into your Claude Code session.
+### Alternative: Local Development
+
+```bash
+git clone https://github.com/eunsanMountain/paperbanana-cc.git
+cd paperbanana-cc && uv sync
+claude --plugin-dir ./
+```
 
 ## Usage
 

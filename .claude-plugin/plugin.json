@@ -4,9 +4,9 @@
   "description": "Publication-quality academic diagrams and statistical plots — reference retrieval, venue-specific styling (NeurIPS/ICML/ACL/IEEE), and iterative critic refinement",
   "author": {
     "name": "eunsan.jo",
-    "url": "https://github.com/eunsan-jo"
+    "url": "https://github.com/eunsanMountain"
   },
-  "homepage": "https://github.com/eunsan-jo/paperbanana-cc",
+  "homepage": "https://github.com/eunsanMountain/paperbanana-cc",
   "keywords": ["academic", "diagram", "plot", "illustration", "research", "paper", "neurips", "icml"],
   "license": "Apache-2.0",
   "dependencies": {
